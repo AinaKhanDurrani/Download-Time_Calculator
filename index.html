@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Download-Time-Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <h1>Download Time Calculator</h1>
+            <form action="">
+                <div>
+
+                    <input type="Number" id="size" placeholder="Enter file size in GB" onkeydown="if(event.key === 'Enter'){MyTime()}" oninput="clearIfEmpty('size', 'speed')"> <h3>GB</h3>
+                </div>
+                <div>
+                    <input type="Number" id="speed" placeholder="Enter the internet speed" onkeydown="if(event.key === 'Enter'){MyTime()}" oninput="clearIfEmpty('size', 'speed')"> <h3> Mbit</h3>
+                </div>
+            </form>
+            <div class="btn">
+                <h2 id="result"></h2>
+                <button onclick="MyTime()">Download Time</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="./script.mjs"></script>
+</body>
+
+</html>
