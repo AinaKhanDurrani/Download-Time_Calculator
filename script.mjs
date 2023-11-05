@@ -10,7 +10,7 @@ function MyTime() {
     let time = (fileSizeMB * 8) / speed;
     let sec = time % 60;
     let min = time / 60;
-    let hour;
+    let hour=0;
     if (min > 59) {
         hour = min / 60;
         min = min % 60;
