@@ -15,10 +15,10 @@
             <form action="">
                 <div>
 
-                    <input type="Number" id="size" placeholder="Enter file size in GB" onkeydown="if(event.key === 'Enter'){MyTime()}" oninput="clearIfEmpty('size', 'speed')"> <h3>GB</h3>
+                    <input type="Number" required id="size" placeholder="Enter file size in GB" onkeydown="if(event.key === 'Enter'){MyTime()}" oninput="clearIfEmpty('size', 'speed')"> <h3>GB</h3>
                 </div>
                 <div>
-                    <input type="Number" id="speed" placeholder="Enter the internet speed" onkeydown="if(event.key === 'Enter'){MyTime()}" oninput="clearIfEmpty( 'speed', 'size')"> <h3> Mbit</h3>
+                    <input type="Number" required id="speed" placeholder="Enter the internet speed" onkeydown="if(event.key === 'Enter'){MyTime()}" oninput="clearIfEmpty( 'speed', 'size')"> <h3> Mbit</h3>
                 </div>
             </form>
             <div class="btn">
