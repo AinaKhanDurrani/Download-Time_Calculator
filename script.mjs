@@ -5,12 +5,12 @@ function MyTime() {
     let internetSpeedMbps = document.getElementById("speed");
 
     let fileSizeMB = (fileSizeGB.value) * 1024;
-    let speed = (internetSpeedMbps.value);
+    let speed = ( internetSpeedMbps.value);
 
     let time = (fileSizeMB * 8) / speed;
     let sec = time % 60;
     let min = time / 60;
-    let hour = 0;
+    let hour;
     if (min > 59) {
         hour = min / 60;
         min = min % 60;
