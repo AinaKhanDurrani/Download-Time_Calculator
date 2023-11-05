@@ -57,11 +57,13 @@ form{
 form>div{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
 }
+
 form>div > h3{
     margin-left: 8px;
-    
+    text-decoration: underline;
 }
 input {
     line-height: 1.5;
